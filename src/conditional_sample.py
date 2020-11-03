@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-import fire
 import json
 import os
 import numpy as np
@@ -58,11 +57,5 @@ def interact_model(
         })[:, len(context_tokens):]
 
         text = enc.decode(out[0])
-        # print("=" * 40 + " SAMPLE " + "=" * 40)
-        # print(text)
-        # print("=" * 80)
         return text
-
-# if __name__ == '__main__':
-#     fire.Fire(interact_model)
 
